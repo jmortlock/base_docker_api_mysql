@@ -37,11 +37,12 @@ defmodule BaseDockerApiMysql.Mixfile do
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_ecto, "~> 3.2"},
       {:mariaex, ">= 0.0.0"},
-      {:distillery, "~> 1.4", runtime: false},      
+      {:distillery, "~> 1.4", runtime: false},
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:credo, "~> 0.8", only: [:dev, :test], runtime: false}
     ]
   end
 
